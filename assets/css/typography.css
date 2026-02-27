@@ -4,7 +4,7 @@
 ====================*/
 body {
     background-color: #0b1341;
-    font-family: 'CerebriSans';
+    font-family: system-ui;
     font-size: 16px;
     font-weight: 400;
     color:#505050;
@@ -40,7 +40,7 @@ iframe{border:0;}
 h1, h2, h3, h4, h5, h6 { color: #020d26; font-family: 'CerebriSans'; margin-top:0; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 {font-size: 60px; line-height: 1.3; margin-bottom: 25px; font-weight: 700; }
-h2 {font-size: 38px; line-height: 1.25; margin-bottom: 25px; font-weight: 600; }
+h2 {font-size: 38px; line-height: 1.25; margin-bottom: 25px; font-weight: 600; font-family: serif; }
 h3 {font-size: 35px; line-height: 1.3; margin-bottom: 20px; font-weight: 600; }
 h4 {font-size: 28px; line-height: 1.3; margin-bottom: 15px; font-weight: 600; }
 h5 {font-size: 21px; line-height: 1.3; margin-bottom: 10px; font-weight: 600; }
@@ -510,6 +510,7 @@ dl dd { margin-bottom: 10px; }
 .heading-bx h3 {
 	margin-top: 0;
     margin-bottom: 0;
+	font-family: serif;
     color: white;
 	/* background: linear-gradient(180deg, #ffffff, #ffd700, #9f7a00); */
 /* -webkit-background-clip: text; */

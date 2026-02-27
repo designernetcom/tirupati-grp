@@ -143,7 +143,8 @@
                 <ul>
                   <li>
                     <a href="tel:+919146189436"
-                      ><i class="la la-phone"></i>Call Us +91 9146189436</a
+                      ><i class="la la-phone"></i>Call Us +91 9146189436 | +91
+                      9146189446</a
                     >
                   </li>
                   <li>
@@ -193,7 +194,7 @@
             <div class="container clearfix">
               <div class="menu-logo">
                 <a href="index.html"
-                  ><img src="assets/images/TIRUPATI-new-logo.png" alt=""
+                  ><img src="assets/images/new-tirupati-logo.png" alt=""
                 /></a>
               </div>
               <button
@@ -245,15 +246,13 @@
               >
                 <div class="menu-logo">
                   <a href="index.html"
-                    ><img src="assets/images/TIRUPATI-new-logo.png" alt=""
+                    ><img src="assets/images/new-tirupati-logo.png" alt=""
                   /></a>
                 </div>
                 <ul class="nav navbar-nav">
                   <li class=""><a href="index.html">Home</a></li>
                   <li>
-                    <a href=""
-                      >About Us<i class="fa fa-chevron-down"></i
-                    ></a>
+                    <a href="">About Us<i class="fa fa-chevron-down"></i></a>
                     <ul class="sub-menu">
                       <li>
                         <a href="about.html"><span>About Us</span> </a>
@@ -287,11 +286,7 @@
                           ><span>Weld Shop </span>
                         </a>
                       </li>
-                      <li>
-                        <a href="quality-of-product-and-system.html"
-                          ><span>Quality of Product and System </span>
-                        </a>
-                      </li>
+
                       <li>
                         <a href="paint-shop.html"><span>Paint Shop </span> </a>
                       </li>
@@ -300,9 +295,14 @@
                           ><span>Silver Plating Shop </span>
                         </a>
                       </li>
+                      <li>
+                        <a href="quality-of-product-and-system.html"
+                          ><span>Quality of Product and System </span>
+                        </a>
+                      </li>
                     </ul>
                   </li>
-                  <li><a href="clients.html">Our Clients </a></li>
+                  <li><a href="clients.html">Clients </a></li>
                   <li class="active">
                     <a href="javascript:;"
                       >Gallery<i class="fa fa-chevron-down"></i
@@ -310,6 +310,9 @@
                     <ul class="sub-menu">
                       <li>
                         <a href="gallery.html"><span>Our Gallery</span> </a>
+                      </li>
+                      <li>
+                        <a href="events.html"><span>Events</span> </a>
                       </li>
                       <li>
                         <a href="video.html"><span>Our Videos</span></a>
@@ -326,479 +329,772 @@
       <!-- Content -->
       <div class="page-content">
         <div class="content-block" id="content-area">
-          <div
+          <!-- <div
             class="page-banner parallax"
-            style="background-image: url(assets/images/background/bread.jpg)"
+            style="background-image: url(assets/images/all-pages-banner.jpeg)"
           >
             <div class="container">
               <div class="page-banner-entry">
                 <h1 class="text-white">Our Gallery</h1>
               </div>
             </div>
+          </div> -->
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const galleryItems = document.querySelectorAll(".gallery-link");
+              const modal = document.getElementById("imageModal");
+              const modalImg = document.getElementById("modalImage");
+              const closeBtn = document.getElementById("closeModal");
+
+              galleryItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                  const imgSrc = this.getAttribute("data-img");
+                  modal.style.display = "flex";
+                  modalImg.src = imgSrc;
+                });
+              });
+
+              closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+              });
+
+              modal.addEventListener("click", function (e) {
+                if (e.target === modal) {
+                  modal.style.display = "none";
+                }
+              });
+            });
+          </script>
+
+          <!-- Image Popup Modal -->
+          <div class="image-modal" id="imageModal">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage" />
           </div>
 
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const galleryItems = document.querySelectorAll(".gallery-link");
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImage");
-  const closeBtn = document.getElementById("closeModal");
-
-  galleryItems.forEach(item => {
-    item.addEventListener("click", function () {
-      const imgSrc = this.getAttribute("data-img");
-      modal.style.display = "flex";
-      modalImg.src = imgSrc;
-    });
-  });
-
-  closeBtn.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
-});
-</script>
 
 
-<!-- Image Popup Modal -->
-<div class="image-modal" id="imageModal">
-  <span class="close-btn" id="closeModal">&times;</span>
-  <img class="modal-content" id="modalImage">
-</div>
-          <section class="product-gallery-section" id="product-gallery">
+<section class="vehicle-gallery-section">
+    <h2 class="vehicle-gallery-title">Automobile Industry </h2>
+    <!-- <p class="vehicle-gallery-subtitle">Explore 10 premium automobile models</p> -->
 
-  <div class="product-gallery-container">
+    <div class="vehicle-gallery-wrapper">
 
-    <!-- <div class="gallery-header">
-      <h2>Our Product Gallery</h2>
-      <p>Explore our precision-engineered components and manufacturing excellence.</p>
-    </div> -->
-
-    <div class="gallery-grid">
-
-      <!-- Gallery Item -->
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/auto-component1.jpg">
-          <img src="assets/images/products/auto-component1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-1.png" alt="Tesla Model S">
+            <h3 class="vehicle-item-name">STRADDLE BALL</h3>
         </div>
-      </div>
 
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/auto-component2.jpg">
-          <img src="assets/images/products/auto-component2.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-2.png" alt="BMW M4">
+            <h3 class="vehicle-item-name">HOUSING</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/auto-component3.jpg">
-          <img src="assets/images/products/auto-component3.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-3.png" alt="Audi R8">
+            <h3 class="vehicle-item-name">RETAINER PLATE/FLYWHEEL</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/bodyvalve1.jpg">
-          <img src="assets/images/products/bodyvalve1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-4.png" alt="Mercedes C-Class">
+            <h3 class="vehicle-item-name">FORCED BAR PIN</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/bodyvalve2.jpg">
-          <img src="assets/images/products/bodyvalve2.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-5.png" alt="Lamborghini Huracan">
+            <h3 class="vehicle-item-name">HEAVY FORGING PARTS</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/bush.jpg">
-          <img src="assets/images/products/bush.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-9.png" alt="Ford Mustang GT">
+            <h3 class="vehicle-item-name">METALLIC SHELL</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/side-cup-metallic-shell.jpg">
-          <img src="assets/images/products/side-cup-metallic-shell.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-6.png" alt="Porsche 911">
+            <h3 class="vehicle-item-name">RAILWAY PARTS</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/top-plate-and-bottom-plate.jpg">
-          <img src="assets/images/products/top-plate-and-bottom-plate.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-7.png" alt="Ferrari 488">
+            <h3 class="vehicle-item-name">OTHER AUTO COMPONENTS</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal1.jpg">
-          <img src="assets/images/gallery/gal1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-8.png" alt="Range Rover Sport">
+            <h3 class="vehicle-item-name">MOUNTING PLATES</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal2.jpg">
-          <img src="assets/images/gallery/gal2.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-10.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">CONNECTORS AND NUT</h3>
         </div>
-      </div>
 
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal3.jpg">
-          <img src="assets/images/gallery/gal3.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-11.png" alt="Ford Mustang GT">
+            <h3 class="vehicle-item-name">TOP AND BOTTOM PLATE</h3>
         </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal4.jpg">
-          <img src="assets/images/gallery/gal4.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal5.jpg">
-          <img src="assets/images/gallery/gal5.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/connector4.jpg">
-          <img src="assets/images/products/connector4.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/copper-link.jpg">
-          <img src="assets/images/products/copper-link.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/cylinder-puffer.jpg">
-          <img src="assets/images/products/cylinder-puffer.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/cylinder-puffer3.jpg">
-          <img src="assets/images/products/cylinder-puffer3.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/disc-spring.jpg">
-          <img src="assets/images/products/disc-spring.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/hosing1.jpg">
-          <img src="assets/images/products/hosing1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/inner1.jpg">
-          <img src="assets/images/products/inner1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/inner3.jpg">
-          <img src="assets/images/products/inner3.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/plates.png">
-          <img src="assets/images/products/plates.png" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/hinges.jpg">
-          <img src="assets/images/products/hinges.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/inner6.jpg">
-          <img src="assets/images/products/inner6.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/interlock-shaft-and-pivot-pins.jpg">
-          <img src="assets/images/products/interlock-shaft-and-pivot-pins.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/lever-and-cover.jpg">
-          <img src="assets/images/products/lever-and-cover.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/conductor1.jpg">
-          <img src="assets/images/products/conductor1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/conductor2.jpg">
-          <img src="assets/images/products/conductor2.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/link-body-casting1.jpg">
-          <img src="assets/images/products/link-body-casting1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/mettallic-shell-straddle-ball.jpg">
-          <img src="assets/images/products/mettallic-shell-straddle-ball.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/mettalic-shell.png">
-          <img src="assets/images/products/mettalic-shell.png" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/nut-for-racking-screw.jpg">
-          <img src="assets/images/products/nut-for-racking-screw.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/outer.jpg">
-          <img src="assets/images/products/outer.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/piston-rod1.jpg">
-          <img src="assets/images/products/piston-rod1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/piston-rod2.jpg">
-          <img src="assets/images/products/piston-rod2.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/racking-screw.jpg">
-          <img src="assets/images/products/racking-screw.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/railway-bar-pin.jpg">
-          <img src="assets/images/products/railway-bar-pin.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/railway-bar-pin1.jpg">
-          <img src="assets/images/products/railway-bar-pin1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/railway-inner.jpg">
-          <img src="assets/images/products/railway-inner.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/collar-for-racking-screw.jpg">
-          <img src="assets/images/products/collar-for-racking-screw.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/connector1.jpg">
-          <img src="assets/images/products/connector1.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/products/connector2.jpg">
-          <img src="assets/images/products/connector2.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal6.jpg">
-          <img src="assets/images/gallery/gal6.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal7.jpg">
-          <img src="assets/images/gallery/gal7.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="gallery-link" data-img="assets/images/gallery/gal8.jpg">
-          <img src="assets/images/gallery/gal8.jpg" alt="Product Image">
-          <!-- <div class="gallery-overlay">
-            <span>View</span>
-          </div> -->
-        </div>
-      </div>
 
     </div>
-
-  </div>
-
 </section>
 
+
+
+
+
+<section class="vehicle-gallery-section">
+    <h2 class="vehicle-gallery-title">Electrical Industry </h2>
+    <!-- <p class="vehicle-gallery-subtitle">Explore 10 premium automobile models</p> -->
+
+    <div class="vehicle-gallery-wrapper">
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-12.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">BODY VALVES</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-13.png" alt="Ford Mustang GT">
+            <h3 class="vehicle-item-name">CUP CONDUCTORS</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-14.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">ALUMINIUM COVERS</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-15.png" alt="Ford Mustang GT">
+            <h3 class="vehicle-item-name">CT SUPPORT</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-16.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">TERMINAL BUSHING</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-17.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">WELDING CONDUCTOR</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-18.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">LEVER AND SHAFT</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-19.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">PLATE CB / PLATE CT</h3>
+        </div>
+
+        <div class="vehicle-item-box">
+            <img src="assets/images/prod-20.png" alt="Toyota Supra">
+            <h3 class="vehicle-item-name">FITG</h3>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+          <!-- <section class="product-gallery-section" id="product-gallery">
+            <div class="product-gallery-container">
+
+              <div class="gallery-grid">
+              
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/auto-component1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/auto-component1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/auto-component2.jpg"
+                  >
+                    <img
+                      src="assets/images/products/auto-component2.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/auto-component3.jpg"
+                  >
+                    <img
+                      src="assets/images/products/auto-component3.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/bodyvalve1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/bodyvalve1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/bodyvalve2.jpg"
+                  >
+                    <img
+                      src="assets/images/products/bodyvalve2.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/bush.jpg"
+                  >
+                    <img
+                      src="assets/images/products/bush.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/side-cup-metallic-shell.jpg"
+                  >
+                    <img
+                      src="assets/images/products/side-cup-metallic-shell.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/top-plate-and-bottom-plate.jpg"
+                  >
+                    <img
+                      src="assets/images/products/top-plate-and-bottom-plate.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal1.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal2.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal2.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal3.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal3.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal4.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal4.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal5.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal5.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/connector4.jpg"
+                  >
+                    <img
+                      src="assets/images/products/connector4.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/copper-link.jpg"
+                  >
+                    <img
+                      src="assets/images/products/copper-link.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/cylinder-puffer.jpg"
+                  >
+                    <img
+                      src="assets/images/products/cylinder-puffer.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/cylinder-puffer3.jpg"
+                  >
+                    <img
+                      src="assets/images/products/cylinder-puffer3.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/disc-spring.jpg"
+                  >
+                    <img
+                      src="assets/images/products/disc-spring.jpg"
+                      alt="Product Image"
+                    />
+ 
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/hosing1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/hosing1.jpg"
+                      alt="Product Image"
+                    />
+   
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/inner1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/inner1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/inner3.jpg"
+                  >
+                    <img
+                      src="assets/images/products/inner3.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/plates.png"
+                  >
+                    <img
+                      src="assets/images/products/plates.png"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/hinges.jpg"
+                  >
+                    <img
+                      src="assets/images/products/hinges.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/inner6.jpg"
+                  >
+                    <img
+                      src="assets/images/products/inner6.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/interlock-shaft-and-pivot-pins.jpg"
+                  >
+                    <img
+                      src="assets/images/products/interlock-shaft-and-pivot-pins.jpg"
+                      alt="Product Image"
+                    />
+ 
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/lever-and-cover.jpg"
+                  >
+                    <img
+                      src="assets/images/products/lever-and-cover.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/conductor1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/conductor1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/conductor2.jpg"
+                  >
+                    <img
+                      src="assets/images/products/conductor2.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/link-body-casting1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/link-body-casting1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/mettallic-shell-straddle-ball.jpg"
+                  >
+                    <img
+                      src="assets/images/products/mettallic-shell-straddle-ball.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/mettalic-shell.png"
+                  >
+                    <img
+                      src="assets/images/products/mettalic-shell.png"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/nut-for-racking-screw.jpg"
+                  >
+                    <img
+                      src="assets/images/products/nut-for-racking-screw.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/outer.jpg"
+                  >
+                    <img
+                      src="assets/images/products/outer.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/piston-rod1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/piston-rod1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/piston-rod2.jpg"
+                  >
+                    <img
+                      src="assets/images/products/piston-rod2.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/racking-screw.jpg"
+                  >
+                    <img
+                      src="assets/images/products/racking-screw.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/railway-bar-pin.jpg"
+                  >
+                    <img
+                      src="assets/images/products/railway-bar-pin.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/railway-bar-pin1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/railway-bar-pin1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/railway-inner.jpg"
+                  >
+                    <img
+                      src="assets/images/products/railway-inner.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/collar-for-racking-screw.jpg"
+                  >
+                    <img
+                      src="assets/images/products/collar-for-racking-screw.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/connector1.jpg"
+                  >
+                    <img
+                      src="assets/images/products/connector1.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/products/connector2.jpg"
+                  >
+                    <img
+                      src="assets/images/products/connector2.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal6.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal6.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal7.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal7.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+
+                <div class="gallery-card">
+                  <div
+                    class="gallery-link"
+                    data-img="assets/images/gallery/gal8.jpg"
+                  >
+                    <img
+                      src="assets/images/gallery/gal8.jpg"
+                      alt="Product Image"
+                    />
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
         </div>
       </div>
 
@@ -926,102 +1222,106 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
       </div>
- <style>
-  .corp-footer-area {
-  position: relative;
-  background-image: url('assets/images/footer-b.jpg'); /* Your Image Path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 90px;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  overflow: hidden;
-}
+      <style>
+        .corp-footer-area {
+          position: relative;
+          background-image: url("assets/images/footer-b.jpg"); /* Your Image Path */
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-top: 90px;
+          font-family: "Poppins", sans-serif;
+          color: #fff;
+          overflow: hidden;
+        }
+      </style>
+      <footer class="corp-footer-area">
+        <div class="corp-footer-bg"></div>
 
- </style>
-<footer class="corp-footer-area">
+        <div class="corp-footer-wrapper">
+          <!-- Column 1 -->
+          <div class="corp-footer-box">
+            <h3 class="corp-footer-title">
+              <!-- <span class="corp-icon">🔗</span>  -->
+              Useful Links
+            </h3>
+            <ul class="corp-footer-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Products</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Our Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
 
-  <div class="corp-footer-bg"></div>
+          <!-- Column 2 -->
+          <div class="corp-footer-box">
+            <h3 class="corp-footer-title">
+              <!-- <span class="corp-icon">📍</span>  -->
+              Our Address
+            </h3>
 
-  <div class="corp-footer-wrapper">
+            <div class="corp-address-block">
+              <strong>Tirupati Autocomp Industrees</strong>
+              <p>Plot No -296, Sector -10, Pune-26 (MH) - India.</p>
+            </div>
 
-    <!-- Column 1 -->
-    <div class="corp-footer-box">
-      <h3 class="corp-footer-title">
-        <!-- <span class="corp-icon">🔗</span>  -->
-        Useful Links
-      </h3>
-      <ul class="corp-footer-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Products</a></li>
-        <li><a href="#">Our Clients</a></li>
-        <li><a href="#">Our Gallery</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
+            <div class="corp-address-block">
+              <strong>Tirupati Engineering Works</strong>
+              <p>J-183, Bhosari MIDC, Pune-26 (MH) – India.</p>
+            </div>
+          </div>
 
-    <!-- Column 2 -->
-    <div class="corp-footer-box">
-      <h3 class="corp-footer-title">
-        <!-- <span class="corp-icon">📍</span>  -->
-        Our Address
-      </h3>
+          <!-- Column 3 -->
+          <div class="corp-footer-box">
+            <h3 class="corp-footer-title">
+              <!-- <span class="corp-icon">✉️</span>  -->
+              Contact Info
+            </h3>
 
-      <div class="corp-address-block">
-        <strong>Tirupati Autocomp Industries</strong>
-        <p>Plot No -296, Sector -10, Pune-26 (MH) - India.</p>
-      </div>
+            <div class="corp-contact-block">
+              <a href="mailto:tirupatiautocomp.inds@gmail.com"
+                >tirupatiautocomp.inds@gmail.com</a
+              >
+              <a href="mailto:marketing@tirupatigroups.co.in"
+                >marketing@tirupatigroups.co.in</a
+              >
+              <a href="mailto:development@tirupatigroups.co.in"
+                >development@tirupatigroups.co.in</a
+              >
+              <br />
+              <a href="tel:+919146189436">+91 9146189436</a>
+              <a href="tel:+919156096735">+91 9156096735</a>
+              <a href="tel:+919146189446">+91 9146189446</a>
+            </div>
+          </div>
 
-      <div class="corp-address-block">
-        <strong>Tirupati Engineering Works</strong>
-        <p>J-183, Bhosari MIDC, Pune-26 (MH) – India.</p>
-      </div>
-    </div>
+          <!-- Column 4 -->
+          <div class="corp-footer-box">
+            <h3 class="corp-footer-title">
+              <!-- <span class="corp-icon">🗺️</span>  -->
+              Locate Us
+            </h3>
 
-    <!-- Column 3 -->
-    <div class="corp-footer-box">
-      <h3 class="corp-footer-title">
-        <!-- <span class="corp-icon">✉️</span>  -->
-        Contact Info
-      </h3>
+            <div class="corp-map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.875453150288!2d73.83571597519418!3d18.624670882489248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b87ee7eee8a9%3A0x931ac503280803ba!2sTirupati%20Auto%20Comp%20Industrees!5e0!3m2!1sen!2sin!4v1694076523761!5m2!1sen!2sin"
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
 
-      <div class="corp-contact-block">
-        <a href="mailto:tirupatiautocomp.inds@gmail.com">tirupatiautocomp.inds@gmail.com</a>
-        <a href="mailto:marketing@tirupatigroups.co.in">marketing@tirupatigroups.co.in</a>
-        <a href="mailto:development@tirupatigroups.co.in">development@tirupatigroups.co.in</a>
-        <br>
-        <a href="tel:+919146189436">+91 9146189436</a>
-        <a href="tel:+919156096735">+91 9156096735</a>
-        <a href="tel:+919146189446">+91 9146189446</a>
-      </div>
-    </div>
-
-    <!-- Column 4 -->
-    <div class="corp-footer-box">
-      <h3 class="corp-footer-title">
-        <!-- <span class="corp-icon">🗺️</span>  -->
-        Locate Us
-      </h3>
-
-      <div class="corp-map-box">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.875453150288!2d73.83571597519418!3d18.624670882489248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b87ee7eee8a9%3A0x931ac503280803ba!2sTirupati%20Auto%20Comp%20Industries!5e0!3m2!1sen!2sin!4v1694076523761!5m2!1sen!2sin"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom -->
-  <div class="corp-footer-bottom">
-    <p>© 2026 <b>Tirupati Autocomp Industries</b> | All Rights Reserved.</p>
-    <p>Designed by <span>NetCom Business Solutions Pvt. Ltd.</span></p>
-  </div>
-
-</footer>
+        <!-- Bottom -->
+        <div class="corp-footer-bottom">
+          <p>
+            © 2026 <b>Tirupati Autocomp Industrees</b> | All Rights Reserved.
+          </p>
+          <p>Designed by <span>NetCom Business Solutions Pvt. Ltd.</span></p>
+        </div>
+      </footer>
       <button
         class="back-to-top fa fa-chevron-up"
         style="background-color: rgb(56 62 201)"
